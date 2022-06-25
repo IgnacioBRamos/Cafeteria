@@ -163,6 +163,7 @@ body{
     height: 100%;
 }
 
+
 /* Fin section nosotros */
 
 
@@ -177,6 +178,7 @@ body{
     border: 2px solid rgba(0, 0, 0, 0.31);
     
 }
+
 
 .productos{ /*Este selector esta compartido en la parte de "section variedades" etiqueta p y en el archivo menu.html en la section*/
     font-family: 'Oswald', sans-serif; 
@@ -199,7 +201,10 @@ body{
     display: flex;
     flex-direction: column;
 }
-
+.flex__productos:hover{
+    transform: scale(1.5);
+    transition: all 2s;
+}
 
 /* .div__productos{
     display: flex;

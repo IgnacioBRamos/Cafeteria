@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@300&display=swap" rel="stylesheet">
@@ -51,7 +53,7 @@
     <main class="grid__main">
         <!--Section portada-->
         <section class="grid__portada">
-            <img src="Multimedia/cafeportada.png" alt="fotoportada" class="fotoportada">
+            <img src="Multimedia/cafeportada.png" alt="fotoportada" class="fotoportada" >
         </section>
         <!--Fin section portada-->
         <!--Section Nosotros-->
@@ -64,10 +66,12 @@
                 </div>
 
                 <div class="holis">
-                    <img src="Multimedia/Cafeteria.jpg" alt="Paisaje de una cafeteria" class="imagen_nosotros">
+                    <img src="Multimedia/Cafeteria.jpg" alt="Paisaje de una cafeteria" class="imagen_nosotros"
+                        data-aos="fade-right" data-aos-delay="50">
                 </div>
                 <div class="holis2">
-                    <p class="descripcion_nosotros">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                    <p class="descripcion_nosotros" data-aos="fade-left">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Id
                         possimus, laudantium temporibus ex debitis fuga cupiditate quidem vero non, aliquam qui, et eos
                         numquam sapiente facilis iste repudiandae est exercitationem!
                         Culpa est eaque modi repellendus fugiat molestiae dignissimos asperiores aut, provident odio
@@ -162,7 +166,8 @@
                 <img src="Multimedia/Cafe envio.png" alt="" class="imagenenvios">
 
 
-                <div class="envios__descripcion">
+                <div class="envios__descripcion" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                     <h2>Entregas a domicilio</h2>
                     <div class="descripcion-flex">
                         <p>Las entregas son en dos franjas horarias:
@@ -189,7 +194,10 @@
 
     </main>
     <!-- Footer Contactanos -->
-    <footer class="footer__grid">
+    <footer class="footer__grid" data-aos="fade-zoom-in"
+    data-aos-easing="ease-in-back"
+    data-aos-delay="300"
+    data-aos-offset="0">
 
 
         <div id="Contactanos" class="footer-titulo">
@@ -205,7 +213,7 @@
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13137.707806489158!2d-58.43208323053615!3d-34.5933637674378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb568b018e969%3A0x92c141d8fb0735c7!2zT2xpIGNhZsOp!5e0!3m2!1ses-419!2sar!4v1653858053246!5m2!1ses-419!2sar"
                 style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                class="mapa"></iframe>
+                class="mapa" ></iframe>
         </div>
 
 
@@ -252,6 +260,13 @@
 
 
     </footer>
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
