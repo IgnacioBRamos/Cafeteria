@@ -1,839 +1,422 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-
-
 body{
-    background-color: rgba(243, 213, 200, 0.268)
+    background-color: rgba(243, 213, 200, 0.268) !important;
 }
-
-
-
-
-
-
-/*   GRID DEL MAIN */
-.grid__main{
-    display: grid;
-
-    grid-template-rows:repeat(15, 200px) ;
-
-    grid-template-columns: repeat(9,1fr);
-
-    border: 1px solid black;
-    gap: 20px;
-}
-
-/* .grid__main,.grid__portada,.grid__nosotros,.grid__variedades,.grid__envios,.grid__contactanos{
-    border: 1px solid black;
-} */
-
-
-
-.grid__portada{
-    grid-column: 1/10;
-    grid-row: 1/6;
-}
-.fotoportada{
-    width: 100%;
-    height: 100%;
-}
-
-.grid__nosotros{
-    grid-column:1/10; 
-    grid-row: 6/9;
-}
-
-
-
-.grid__variedades{
-    grid-column: 1/10;
-    grid-row: 9/12;
-}
-
-.grid__envios{
-    grid-column: 1/10;
-    grid-row: 12/16;
-
-}
-
-.grid__contactanos{
-    grid-column: 1/10;
-    grid-row: 15/18;
-    
-}
-
-
-/* Fin grid main */
-
-
-
-/*Header*/
-.header{
+.bg-nacho{
+    background-color: rgba(10, 4, 1, 0.518);
     position: sticky;
-    top: 0%;
-    background-color:rgba(10, 4, 1, 0.518);
-    display: grid;
-    grid-template-rows: 150px;
-    grid-template-columns: 1fr;
+    top:0%;
+    z-index: 1;
 }
 
-.logo{
-    width: 100px;
-    margin: 20px;
-}
-
-.barranav{
-    align-self: center;
+.tx-align{
+    text-align: center;
 }
 
 
-.barranav__ul{
-    padding: 5px 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    list-style: none
+
+/* General */
+
+.Titulos{
+text-align: center;
+font-family: 'Courgette', cursive;;
+}
+
+.subtitulos{
+    font-family: 'Courgette', cursive;
 }
 
 
+.descripciones{
+    font-family: 'Dancing Script', cursive;
+}
+
+
+
+.links-2{
+    text-decoration: none;
+    color: black;
+}
+
+/* Fin general */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Navbar */
 
 .links{
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
-    margin: 0px 10px;
-    text-decoration: none;
+    font-family:'Courgette', cursive;
+    color: white !important;
+}
+
+/* Fin Navbar */
+
+/* banner */
+
+.img-1{
+    width: 100%;
+}
+
+.img-2{
+    width: 100%;
+}
+
+
+.img-3{
+    width: 100%;
+}
+
+
+
+/* Fin banner */
+
+
+
+
+
+/* Nosotros */
+.bg__nosotros{
+    background-color: rgba(10, 4, 1, 0.518);
+}
+
+
+.bg__nosostros-img{
+    background-color: rgb(61, 6, 61);
+}
+
+
+.txt__nosotros{
     color: white;
 }
 
 
-
-
-.header__nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.deco{
+    color: gold;
 }
 
-
-
-/*Fin header*/
-
-
-
-
-/* Section Nosotros */
-
-
-.descripcion_nosotros{
-    font-family: 'Lobster', cursive;
-    align-self: center;
-    font-size: 20px;
-    margin: 200px 100px;
-    
-}
-
-.grid__nosotros--grid{
-    display: grid;
-    grid-template-rows:50px 590px ;
-    grid-template-columns: repeat(3,1fr);
-    gap: 0px;
-}
-
-
-.holis{
-    grid-row: 2/3;
-    grid-column: 1/1;
-}
-.holis2{
-    grid-row: 2/3;
-    grid-column: 2/4;
-}
-
-.nosotros--grid__titulo{
-    grid-row: 1/3;
-    grid-column: 2/3;
-}
-
-
-.imagen_nosotros{
-    width: 100%;
-    height: 100%;
-}
-
-
-/* Fin section nosotros */
+/* Fin Nosotros */
 
 
 
 
+/* Variedades */
 
-/*Section variedades*/
 
-.imagenesvariedades{
-    
-    width: 200px;
-    border: 2px solid rgba(0, 0, 0, 0.31);
+.tamanio_cardds{
+    width: 75% !important;
     
 }
 
 
-.productos{ /*Este selector esta compartido en la parte de "section variedades" etiqueta p y en el archivo menu.html en la section*/
-    font-family: 'Oswald', sans-serif; 
-    font-size: 20px;
-    padding: 0px 70px;
-}
-.link__variedades{
-    text-align: center;
-    padding: 0px 0px 0px 0px; 
-}
-
-.div__link__variedades{
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-    
-}
-
-.flex__productos{
-    display: flex;
-    flex-direction: column;
-}
-.flex__productos:hover{
-    transform: scale(1.5);
-    transition: all 2s;
+.cartas{
+    width: 300px;
 }
 
 
 
-
-.cont_img-1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-top: 60px;  
+.cartas-carrusel{
+    margin-left: 20vw !important;
+    margin-right: 15vw !important;
+    padding-top: 10vh;
+    display: flex !important;
+    flex-wrap: wrap!important;
 }
+/* Fin Variedades */
 
-.cont_img-2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-top: 60px;
-    
-}
 
-.grid__variedades--grid{
-    display: grid;
-    grid-template-rows: 50px 540px 50px;
-    grid-template-columns: repeat(3,1fr)
-}
 
-.variedades--grid__titulo{
-    grid-row: 1/3;
-    grid-column: 2/3;
+/* Pagina shop online */
+
+
+.nombres{
+    font-size: 35px;
+    font-weight: 900;
 }
 
 
-.variedades--grid__img{
-    grid-row: 2/3;
-    grid-column: 1/4;
+.precio{
+    font-weight: 500;
+    font-size: xx-large;
+    color:#aa9d8c;
 }
 
-
-.link__variedades{
-    grid-row: 3/4;
-    grid-column: 2/3;
-}
+/* Fin shop online */
 
 
 
 
-
-
-/*Fin section variedades*/
-
-
-
-
-
-
-/*SECTION ENVIOS*/
-
-.imagenenvios{
-    width: 100%;
-    height: 100%;
-    grid-row: 2/3;
-    grid-column: 1/5;
-}
-.envios__descripcion{
-    font-family: 'Lobster', cursive;
-    font-size: 20px;
-    grid-row: 2/3;
-    grid-column: 1/3;
-    color: white;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.descripcion-flex{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 200px;
-    flex-wrap: wrap;
-    margin: 0px 200px 0px 200px;
-}
-.grid__envios--grid{
-    display: grid;
-    grid-template-rows: 100px 760px;
-    grid-template-columns: repeat(4,1fr);
-}
-
-
-
-.envios--grid__titulo{
-    grid-row: 1/2;
-    grid-column: 2/4;
-}
-/*Fin section envios*/
-
-
-
-
-/*Section Contactanos*/ /*Esto selectores estan compartidos en el footer de la pagina menu.html*/
-
-.footer{
-    display: grid;
-    grid-template-rows: 500px;
-    grid-template-columns: 1fr;
-}
+/* Footer */
 
 .mapa{
     width: 100%;
-    height: 100%;
-}
-
-.logo__redes{
-    width: 40px;
-}
-
-
-.infocontactanos{
-    
-    font-size: 28px;
-    margin: 10px 20px;
-    font-family: 'Oswald', sans-serif;
-    
-    grid-row: 3/5;
-    grid-column: 5/7;
-}
-.infocontactanos__h6{
-    padding: 20px;
-    
+    height: 500px;
 }
 
 
 
 
-.footer__info{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 100px;
-    grid-row: 3/5;
-    grid-column: 2/6;
-}
-
-
-
-.logos__redes{
-    display: flex;
-    flex-direction: row;
-    padding: 10px; 
-    margin-left: -20px; 
-}
-
-.logos__redes .instagram{
-    margin: 0px 15px;
-}
-
-.footer__grid{
-    display: grid;
-    grid-template-rows: 100px 500px repeat(2,200px);
-    grid-template-columns: repeat(6,1fr);
-}
-
-.footer-titulo{
-    grid-row: 1/2;
-    grid-column: 3/5;
-}
-.grid-mapa{
-    grid-row: 2/3;
-    grid-column: 1/7;
+.padd-insta{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
 
 
-/*Fin Section Contactanos*/
-
-
-
-.titulo{
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    font-size: 40px;
-    
-}
 
 
 
 
-/*  Menu index */
-
-.descripcion{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 15px;
-    margin-left: 20px;
-} 
-
-.division{
-    margin: 30px 300px;
-}
 
 
 
-.menu{
-    text-align: center;
-    margin: 100px;
-    
-}
 
-.menu__productos{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Menu html */
+
+
+
+.borde{
+    border: 1px solid #aa9d8c;
     display: flex;
     flex-direction: row;
     align-items: center;
-
-}
-.img__menu:hover{
-    transform: scale(1.25);
-    transition: all 2s;
-    margin: 40px;
 }
 
 
 
-.grid__menu{
-    display: grid;
-    grid-template-rows: 1000px;
-    grid-template-columns: repeat(2,1fr);
+.borde-2{
 
-}
-.footer__info-menu{
-    grid-column: 1/2;
-    grid-row: 1/2;
+    border: 1px solid #aa9d8c;
     display: flex;
     flex-direction: row;
-    justify-content: space-around
+    align-items: center;
 }
 
-.img__menu{
-    width: 200px;
-    border: 2px solid rgba(0, 0, 0, 0.31);
+.descripciones-menu{
+        
+    font-family: 'Dancing Script', cursive;
 }
 
 
 
 
 
-@media only screen and (min-width: 481px) and (max-width: 960px){
-    
-    .grid__main{
-        display: grid;
-    
-        grid-template-rows:repeat(15, 100px) ;
-        border: 1px solid black;
-        gap: 10px;
+
+
+
+
+
+@media only screen and (min-width:481px) and (max-width:960px){
+
+    /* Shop pagina*/
+    .img-cafe{
+        height: 250px;
+
     }
 
-    .header{
-        
-        display: grid;
-        grid-template-rows: 75px;
-        
-    }
-    .logo{
-        width: 50px;
-        margin: 10px;
-    }
-    .barranav__ul{
-        padding: 2px 5px;
-    }
-
-    .links{
-        font-size: 120%;
-        margin: 0px 5px;
-    }
-
-    .descripcion_nosotros{
-        
-        font-size: 10px;
-        margin: 100px 50px;
-        
+    .img-capsula{
+        height: 285px;
     }
 
 
-    .grid__nosotros--grid{
-        display: grid;
-        grid-template-rows:25px 295px ;
-        
-        gap: 0px;
-    }
-
-    .imagenesvariedades{
-    
-        width: 100px;
-        border: 1px solid rgba(0, 0, 0, 0.31);
-        
-    }
-
-    .productos{ 
-        font-size: 10px;
-        padding: 0px 35px;
-    }
-
-    .div__link__variedades{
-        
-        font-size: 10px;
-        
-        
-    }
-
-    .cont_img-1{
-        margin-top: 30px;
-    }
-
-    .cont_img-2{
-        margin-top: 30px;
-    }
-
-    .grid__variedades--grid{
-        display: grid;
-        grid-template-rows: 25px 270px 25px;
-        grid-template-columns: repeat(3,1fr)
-    }
-    
-    
-    .envios__descripcion{
-        
-        font-size: 10px;
-
-        margin-top: 25px;
-        
-    }
-
-    .descripcion-flex{
-        
-        padding-top: 100px;
-        
-        margin: 0px 100px 0px 100px;
-    }
-
-    .grid__envios--grid{
-        display: grid;
-        grid-template-rows: 50px 380px;
-        grid-template-columns: repeat(4,1fr);
+    .img-cafetera{
+        height: 229px;
     }
 
 
 
-    .footer{
-        display: grid;
-        grid-template-rows: 250px;
-        
-    }
 
-
-    .logo__redes{
-        width: 20px;
-    }
-    
     .infocontactanos{
-    
-        font-size: 14px;
-        margin: 5px 10px;
+        font-size: 12px;
     }
 
-    .infocontactanos__h6{
-        padding: 10px;
+    /* fin shop pagina */
+
+
+
+
+}
+
+
+
+
+
+@media only screen and (max-width:480px){
+
+    /* shop pagina */
+
+    .img-cafe{
+        height: 150px;
         
     }
-
-
-    .footer__info{
-        margin-top: 50px;
-    }
-
-
-    .logos__redes{
-        
-        padding: 5px; 
-        margin-left: -10px; 
-    }
-
-
-    .logos__redes .instagram{
-        margin: 0px 7px;
-    }
-
-
-
-    .footer__grid{
-        display: grid;
-        grid-template-rows: 50px 250px repeat(2,100px);
-        
-    }
-
-
-    .titulo{
-        text-align: center;
-        font-family: 'Oswald', sans-serif;
+    .nombres{
         font-size: 20px;
-        
+        font-weight: 900;
     }
 
-
-
-
-
-    .descripcion{
-        font-size: 8px;
-        margin-left: 10px;
-    }
-
-
-    .division{
-        margin: 15px 150px;
-    }
-
-    .menu{
-        margin: 50px;
-    }
-
-
-    .grid__menu{
-        display: grid;
-        grid-template-rows: 500px;
-    }
-
-    .img__menu{
-        width: 100px;
-        border: 1px solid rgba(0, 0, 0, 0.31);
-    }
-
-
-
-
-
-}
-
-
-
-
-@media only screen and (max-width: 480px) {
-    
-    .grid__main{
-        display: grid;
-    
-        grid-template-rows:repeat(15, 50px) ;
-        border: 1px solid black;
-        gap: 5px;
-    }
-
-    .header{
-        
-        display: grid;
-        grid-template-rows: 38px;
-        
-    }
-    .logo{
-        width: 20px;
-        margin: 5px;
-    }
-    .barranav__ul{
-        padding: 1px 2px;
-    }
-
-    .links{
+    .des-cafe{
         font-size: 10px;
-        margin: 0px 2px;
-    }
-
-    .descripcion_nosotros{
-        
-        font-size: 5px;
-        margin: 50px 25px;
-        
     }
 
 
-    .grid__nosotros--grid{
-        display: grid;
-        grid-template-rows:12px 147px ;
-        
-        gap: 0px;
+    .img-capsula{
+        height: 170px;
     }
 
-    .imagenesvariedades{
-    
-        width: 50px;
-        border: 1px solid rgba(0, 0, 0, 0.31);
-        
-    }
 
-    .productos{ 
-        font-size: 5px;
-        padding: 0px 17px;
-    }
-
-    .div__link__variedades{
-        
-        font-size: 5px;
-        
-        
-    }
-
-    .cont_img-1{
-        margin-top: 15px;
-    }
-
-    .cont_img-2{
-        margin-top: 15px;
-    }
-
-    .grid__variedades--grid{
-        display: grid;
-        grid-template-rows: 12px 135px 12px;
-        grid-template-columns: repeat(3,1fr)
-    }
-    
-    
-    .envios__descripcion{
-        
-        font-size: 5px;
-
-        margin-top: 12px;
-        
-    }
-
-    .descripcion-flex{
-        
-        padding-top: 50px;
-        
-        margin: 0px 50px 0px 50px;
-    }
-
-    .grid__envios--grid{
-        display: grid;
-        grid-template-rows: 25px 190px;
-        grid-template-columns: repeat(4,1fr);
+    .img-cafetera{
+        height: 133px;
     }
 
 
 
-    .footer{
-        display: grid;
-        grid-template-rows: 125px;
-        
-    }
 
-
-    .logo__redes{
-        width: 10px;
-    }
-    
     .infocontactanos{
-    
-        font-size: 7px;
-        margin: 2px 5px;
+        font-size: 9px;
+    }
+
+
+
+    .logo{
+        width: 60px;
     }
 
     .infocontactanos__h6{
-        padding: 5px;
-        
+        font-size: 13px;
     }
 
 
-    .footer__info{
-        margin-top: 25px;
+
+    /* Fin shop pagina */
+
+
+
+
+    /* Index html */
+
+    .img-nosotros{
+        height: 300px;
     }
+
+
+
+    .txt__nosotros{
+        font-size: 12px;
+    }
+
+
+
+
+    /* variedades */
+
+    .trank{
+        width: 100%;
+    }
+
+    .descripciones{
+        font-size: 10px;
+    }
+
+    .icono-shop{
+        height: 40px;
+    }
+
+    .flex-shop{
+        display: flex;
+        flex-direction: column;
+    }
+
 
 
     .logos__redes{
-        
-        padding: 2px; 
-        margin-left: -5px; 
-    }
-
-
-    .logos__redes .instagram{
-        margin: 0px 4px;
+        display: flex;
+        flex-direction: column;
     }
 
 
 
-    .footer__grid{
-        display: grid;
-        grid-template-rows: 25px 125px repeat(2,50px);
-        
+    .logo__redes{
+        width: 25px;
     }
 
 
-    .titulo{
-        
-        font-size: 10px;
-        
+    .padd-insta{
+        padding-left: 0px;
+        padding-right: 0px; 
+    }
+
+
+
+    .mapa{
+        height: 200px;
     }
 
     
-
-    .descripcion{
-        font-size: 4px;
-        margin-left: 5px;
-    }
-
-
-    .division{
-        margin: 8px 75px;
-    }
-
-    .menu{
-        margin: 25px;
-    }
-
-
-    .grid__menu{
-        display: grid;
-        grid-template-rows: 250px;
-    }
-
-    .img__menu{
-        width: 50px;
-        border: 1px solid rgba(0, 0, 0, 0.31);
-    }
-
-
-
-
+    
 }
 
+
+@media only screen and (max-width:767px){
+    
+    
+
+
+    .borde{
+        width: 200px;
+        display: flex;
+        flex-direction:column
+    }
+
+    .borde-2{
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    } 
+
+
+    .descripciones-menu{
+        
+        font-family: 'Dancing Script', cursive;
+    }
+
+    .redes{
+        font-size: 10px;
+        font-weight: 800;
+    }
+    
+
+}
 
 
 
