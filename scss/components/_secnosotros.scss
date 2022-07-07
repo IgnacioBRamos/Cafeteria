@@ -1,0 +1,28 @@
+/* Nosotros */
+.bg__nosotros{
+    background-color: nth($colores, 2);
+    
+    .bg__nosostros-img{
+        background-color: nth($colores, 3);
+        
+        .txt__nosotros{
+            color: nth($colores, 5);
+        }
+        
+        .deco{
+            color: nth($colores, 6);
+        }
+        
+        @media only screen and (max-width:480px){
+            .txt__nosotros{
+                font-size: 12px;
+            }
+            
+            .img-nosotros{
+                height: 300px;
+            }    
+        } 
+    }
+}
+
+/* Fin Nosotros */

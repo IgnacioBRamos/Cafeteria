@@ -1,0 +1,21 @@
+/* Navbar*/
+.bg-nacho{
+    background-color: nth($colores, 2);
+    position: sticky;
+    top:0%;
+    z-index: 1;
+    
+    div{
+        .tx-align{
+            text-align: center;
+            
+            .links{
+                font-family: nth($fuentes, 1);
+                color: nth($colores, 5) !important;
+            }    
+            
+        }
+    }
+ }
+
+/* fin Navbar*/
