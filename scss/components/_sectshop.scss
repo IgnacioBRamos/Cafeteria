@@ -1,0 +1,31 @@
+/* Shop-index.html*/
+
+
+.descripciones{
+    font-family: nth($fuentes, 2);
+}
+
+.links-2{
+    text-decoration: none;
+    color: nth($colores, 7);
+}
+
+@media only screen and (max-width:480px){
+    
+    .descripciones{
+        font-size: 10px;
+    }
+    
+    .icono-shop{
+        height: 40px;
+    }
+    
+    .flex-shop{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+
+/* Fin shop-index.html*/

@@ -1,0 +1,57 @@
+/*  Menu html */
+
+
+
+.borde-2{
+
+    border: 1px solid nth($colores, 4);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    
+
+}
+
+
+.borde{
+        border: 1px solid nth($colores, 4);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    
+    
+.descripciones-menu{
+        
+        font-family: nth($fuentes, 2);
+}
+    
+    
+  
+@media only screen and (max-width:767px){
+        
+        .borde{
+            width: 200px;
+            display: flex;
+            flex-direction:column
+        }
+        
+        .borde-2{
+        
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        
+        } 
+        
+        
+        .descripciones-menu{
+            
+            font-family: 'Dancing Script', cursive;
+        }
+}
+    
+    
+/* fin menu html*/

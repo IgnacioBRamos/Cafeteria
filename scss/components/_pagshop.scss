@@ -1,0 +1,73 @@
+/* Pagina shop.html */
+
+div{
+    
+    
+    
+    
+    .nombres{
+        font-size: 35px;
+        font-weight: 900;
+        
+        
+    }
+    
+    div{
+        
+        
+        
+        .precio{
+            font-weight: 500;
+            font-size: xx-large;
+            color: nth($colores, 4);
+        }
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width:960px){
+    .img-cafe{
+        height: 250px;
+        
+    }
+    
+    .img-capsula{
+        height: 285px;
+    }
+    
+    
+    .img-cafetera{
+        height: 229px;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .img-cafe{
+        height: 150px;
+        
+    }
+    
+    .des-cafe{
+        font-size: 10px;
+    }
+    
+    
+    .nombres{
+        font-size: 20px;
+        font-weight: 900;
+    }
+    .img-capsula{
+        height: 170px;
+    }
+    
+    
+    .img-cafetera{
+        height: 133px;
+    }
+    
+}
+
+
+
+
+
+/* Fin shop.html */
