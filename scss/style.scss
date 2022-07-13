@@ -12,12 +12,7 @@ body{
 @import "components/navbar";
 
 
- 
-
-
-
-
-/* General */
+ /* General */
 
 .Titulos{
     text-align: center;
@@ -34,20 +29,9 @@ body{
 
 /* banner */
 
-.img-1{
+.img-1,.img-2,.img-3{
     width: 100%;
 }
-
-.img-2{
-    width: 100%;
-}
-
-
-.img-3{
-    width: 100%;
-}
-
-
 
 /* Fin banner */
 
@@ -55,88 +39,6 @@ body{
 @import "components/secvariedades";
 @import "components/sectshop";
 @import "components/pagshop";
-
-
-/* Footer */
-
-.mapa{
-    width: 100%;
-    height: 500px;
-}
-
-
-.padd-insta{
-    padding-left: 20px;
-    padding-right: 20px;
-}
-@media only screen and (min-width:481px) and (max-width:960px){      
-    .infocontactanos{
-        font-size: 12px;
-    }
-}
-
-@media only screen and (max-width:480px){
-    
-    .infocontactanos{
-        font-size: 9px;
-    }
-    
-    
-    
-    .logo{
-        width: 60px;
-    }
-    
-    .infocontactanos__h6{
-        font-size: 13px;
-    }
-    
-    
-    
-    .logos__redes{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    
-    
-    .logo__redes{
-        width: 25px;
-    }
-    
-    
-    .padd-insta{
-        padding-left: 0px;
-        padding-right: 0px; 
-    }
-    
-    
-    
-    .mapa{
-        height: 200px;
-    }
-    
-    
-    
-    
-    
-}
-
-/* Fin Footer*/
-
-
-
-
-
+@import "components/footer";
 @import "components/pagmenu";
 
-
-    
-
-@media only screen and (max-width:767px){
-    
-    .redes{
-        font-size: 10px;
-        font-weight: 800;
-    }
-}

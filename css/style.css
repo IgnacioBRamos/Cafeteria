@@ -30,15 +30,7 @@ body {
 
 /* Fin general */
 /* banner */
-.img-1 {
-  width: 100%;
-}
-
-.img-2 {
-  width: 100%;
-}
-
-.img-3 {
+.img-1, .img-2, .img-3 {
   width: 100%;
 }
 
@@ -61,7 +53,7 @@ body {
     font-size: 12px;
   }
   .bg__nosotros .bg__nosostros-img .img-nosotros {
-    height: 300px;
+    height: 250px;
   }
 }
 
@@ -86,7 +78,7 @@ body {
 /* Fin Variedades */
 /* Shop-index.html*/
 .descripciones {
-  font-family: cursive;
+  font-family: "Dancing Script";
 }
 
 .links-2 {
@@ -189,16 +181,15 @@ div div .precio {
     height: 200px;
   }
 }
+@media only screen and (max-width: 767px) {
+  .redes {
+    font-size: 10px;
+    font-weight: 800;
+  }
+}
 /* Fin Footer*/
 /*  Menu html */
-.borde-2 {
-  border: 1px solid #aa9d8c;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.borde {
+.borde, .borde-2 {
   border: 1px solid #aa9d8c;
   display: flex;
   flex-direction: row;
@@ -206,7 +197,7 @@ div div .precio {
 }
 
 .descripciones-menu {
-  font-family: cursive;
+  font-family: "Dancing Script";
 }
 
 @media only screen and (max-width: 767px) {
@@ -225,11 +216,5 @@ div div .precio {
   }
 }
 /* fin menu html*/
-@media only screen and (max-width: 767px) {
-  .redes {
-    font-size: 10px;
-    font-weight: 800;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */
