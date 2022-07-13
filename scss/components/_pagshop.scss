@@ -1,4 +1,5 @@
 /* Pagina shop.html */
+@import "../base/mixin";
 
 div{
     
@@ -26,23 +27,22 @@ div{
 
 @media only screen and (min-width:481px) and (max-width:960px){
     .img-cafe{
-        height: 250px;
-        
+        @include cambio(250px);
     }
     
     .img-capsula{
-        height: 285px;
+        @include cambio (285px);
     }
     
     
     .img-cafetera{
-        height: 229px;
+        @include cambio (229px);
     }
 }
 
 @media only screen and (max-width:480px){
     .img-cafe{
-        height: 150px;
+        @include cambio (150px);
         
     }
     
@@ -56,12 +56,12 @@ div{
         font-weight: 900;
     }
     .img-capsula{
-        height: 170px;
+        @include cambio (170px);
     }
     
     
     .img-cafetera{
-        height: 133px;
+        @include cambio (133px);
     }
     
 }

@@ -1,0 +1,77 @@
+@import "../base/mapa";
+
+/* Footer */
+
+.mapa{
+    width: 100%;
+    height: 500px;
+}
+
+
+.padd-insta{
+    padding-left: map-get($medidas, pl);
+    padding-right: map-get($medidas, pr);
+}
+@media only screen and (min-width:481px) and (max-width:960px){      
+    .infocontactanos{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:480px){
+    
+    .infocontactanos{
+        font-size: 9px;
+    }
+    
+    
+    
+    .logo{
+        width: 60px;
+    }
+    
+    .infocontactanos__h6{
+        font-size: 13px;
+    }
+    
+    
+    
+    .logos__redes{
+        display: map-get($medidas, flex-standard);
+        flex-direction: map-get($medidas, dflex);
+    }
+    
+    
+    
+    .logo__redes{
+        width: 25px;
+    }
+    
+    
+    .padd-insta{
+        padding-left: 0px;
+        padding-right: 0px; 
+    }
+    
+    
+    
+    .mapa{
+        height: 200px;
+    }
+    
+    
+    
+    
+    
+}
+
+
+@media only screen and (max-width:767px){
+    
+    .redes{
+        font-size: 10px;
+        font-weight: 800;
+    }
+}
+
+/* Fin Footer*/
