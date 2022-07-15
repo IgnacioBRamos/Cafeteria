@@ -59,19 +59,17 @@ body {
 
 /* Fin Nosotros */
 /* Variedades */
-.cartas-carrusel {
-  margin-left: 20vw !important;
-  margin-right: 15vw !important;
-  padding-top: 10vh;
-  display: flex !important;
-  flex-wrap: wrap !important;
+.bg__variedades-img {
+  background-color: white;
+  border-radius: 2%;
+  margin: 20px;
 }
-.cartas-carrusel .cartas {
-  width: 300px;
+.bg__variedades-img .img-variedades {
+  border-radius: 2%;
 }
 @media only screen and (max-width: 480px) {
-  .cartas-carrusel .cartas {
-    width: 100%;
+  .bg__variedades-img .img-variedades {
+    height: 300px;
   }
 }
 

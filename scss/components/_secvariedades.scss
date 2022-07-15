@@ -1,22 +1,21 @@
 /* Variedades */
 
-.cartas-carrusel{
-    margin-left: 20vw !important;
-    margin-right: 15vw !important;
-    padding-top: 10vh;
-    display: flex !important;
-    flex-wrap: wrap!important;
-    
-    .cartas{
-        width: 300px;
-        
+
+.bg__variedades-img{
+    background-color: nth($colores, 5);
+    border-radius: 2%;
+    margin: 20px;
+    .img-variedades{
+        border-radius: 2%;
     }
     @media only screen and (max-width:480px){
-        .cartas{
-            width: 100%;
-        }        
+        .img-variedades{
+            height: 300px;
+        }    
     }
+
 }
+
 
 
 /* Fin Variedades */
