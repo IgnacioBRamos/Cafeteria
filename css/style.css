@@ -60,11 +60,8 @@ body {
 /* Fin Nosotros */
 /* Variedades */
 .cartas-carrusel {
-  margin-left: 20vw !important;
-  margin-right: 15vw !important;
-  padding-top: 10vh;
-  display: flex !important;
-  flex-wrap: wrap !important;
+  display: flex;
+  justify-content: center;
 }
 .cartas-carrusel .cartas {
   width: 300px;
@@ -168,14 +165,14 @@ div div .precio {
   }
   .logos__redes {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
   .logo__redes {
     width: 25px;
   }
   .padd-insta {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .mapa {
     height: 200px;
