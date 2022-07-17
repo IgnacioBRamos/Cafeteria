@@ -1,28 +1,85 @@
 /* Nosotros */
-.bg__nosotros{
-    background-color: nth($colores, 2);
+
+
+
+
+
+.flex__nosotros{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     
-    .bg__nosostros-img{
+    .bg__nosotros-img{
         background-color: nth($colores, 3);
+        width: 400px;
         
-        .txt__nosotros{
-            color: nth($colores, 5);
+        .img-nosotros{
+            width: 100%;
         }
-        
-        .deco{
+
+        .deco, .deco-titulo{
             color: nth($colores, 6);
         }
+
+        .deco{
+            margin: 0px 20% ;
+            padding: 0% 0% 5% 0%;
+        }
+
+        .deco-titulo{
+            padding-top: 5%;
+            font-size: 20px;
+        }
+
+        .txt__nosotros{
+            color: nth($colores, 5);
+            padding-left: 10%;
+            padding-right: 10%;
+            font-size: 15px;
+        }
+            
         
         @media only screen and (max-width:480px){
-            .txt__nosotros{
-                font-size: 12px;
+            .deco-titulo{
+                font-size: 15px;
             }
+            .txt__nosotros{
+                font-size: 10px;
+            }
+        }   
             
-            .img-nosotros{
-                height: 250px;
-            }    
-        } 
+    }
+    @media only screen and (max-width:480px){
+        .bg__nosotros-img{
+            width: 50%;
+        }
+    }
+    @media only screen and (min-width: 480px) and (max-width:1299px){
+        .bg__nosotros-img{
+            width: 250px;
+        }
+    }
+    
+    @media only screen and (min-width: 1300px) and (max-width: 1700px){
+        .bg__nosotros-img{
+            width: 25%;
+        }
     }
 }
+
+@media only screen and (max-width:480px){
+    .flex__nosotros{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+
 
 /* Fin Nosotros */

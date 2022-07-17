@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: rgba(243, 213, 200, 0.268) !important;
 }
@@ -36,27 +41,68 @@ body {
 
 /* Fin banner */
 /* Nosotros */
-.bg__nosotros {
-  background-color: rgba(10, 4, 1, 0.518);
+.flex__nosotros {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.bg__nosotros .bg__nosostros-img {
+.flex__nosotros .bg__nosotros-img {
   background-color: rgb(61, 6, 61);
+  width: 400px;
 }
-.bg__nosotros .bg__nosostros-img .txt__nosotros {
-  color: white;
+.flex__nosotros .bg__nosotros-img .img-nosotros {
+  width: 100%;
 }
-.bg__nosotros .bg__nosostros-img .deco {
+.flex__nosotros .bg__nosotros-img .deco, .flex__nosotros .bg__nosotros-img .deco-titulo {
   color: gold;
 }
+.flex__nosotros .bg__nosotros-img .deco {
+  margin: 0px 20%;
+  padding: 0% 0% 5% 0%;
+}
+.flex__nosotros .bg__nosotros-img .deco-titulo {
+  padding-top: 5%;
+  font-size: 20px;
+}
+.flex__nosotros .bg__nosotros-img .txt__nosotros {
+  color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 15px;
+}
 @media only screen and (max-width: 480px) {
-  .bg__nosotros .bg__nosostros-img .txt__nosotros {
-    font-size: 12px;
+  .flex__nosotros .bg__nosotros-img .deco-titulo {
+    font-size: 15px;
   }
-  .bg__nosotros .bg__nosostros-img .img-nosotros {
-    height: 250px;
+  .flex__nosotros .bg__nosotros-img .txt__nosotros {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .flex__nosotros .bg__nosotros-img {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 1299px) {
+  .flex__nosotros .bg__nosotros-img {
+    width: 250px;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1700px) {
+  .flex__nosotros .bg__nosotros-img {
+    width: 25%;
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .flex__nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 /* Fin Nosotros */
 /* Variedades */
 .bg__variedades-img {
@@ -73,29 +119,53 @@ body {
   }
 }
 
-/* Fin Variedades */
-/* Shop-index.html*/
-.descripciones {
-  font-family: "Dancing Script";
-}
-
 .links-2 {
   text-decoration: none;
   color: black;
 }
 
+/* Fin Variedades */
+/* Shop-index.html*/
+.bg__img-shop {
+  background-image: url(../../multimedia/background-var.jpg);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: gray;
+  color: white;
+  background-blend-mode: multiply;
+}
+.bg__img-shop .descripciones {
+  font-family: "Dancing Script";
+  text-align: start;
+  padding-right: 5%;
+}
 @media only screen and (max-width: 480px) {
-  .descripciones {
+  .bg__img-shop .descripciones {
     font-size: 10px;
+    text-align: center;
+    padding-right: 25%;
+    padding-left: 25%;
   }
-  .icono-shop {
+  .bg__img-shop .icono-shop {
     height: 40px;
   }
-  .flex-shop {
+  .bg__img-shop .flex-shop {
     display: flex;
     flex-direction: column;
   }
+  .bg__img-shop .conjunto_shop {
+    text-align: center;
+    padding-top: 5%;
+  }
 }
+@media only screen and (min-width: 481px) and (max-width: 990px) {
+  .bg__img-shop .descripciones {
+    padding-right: 45%;
+  }
+}
+
 /* Fin shop-index.html*/
 /* Pagina shop.html */
 div .nombres {
