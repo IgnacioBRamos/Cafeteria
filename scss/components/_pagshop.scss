@@ -1,29 +1,51 @@
 /* Pagina shop.html */
 @import "../base/mixin";
 
-div{
+
     
     
-    
-    
-    .nombres{
-        font-size: 35px;
-        font-weight: 900;
+.nombres{
+    font-size: 35px;
+    font-weight: 900;
         
         
-    }
+}
     
     div{
         
         
         
-        .precio{
-            font-weight: 500;
-            font-size: xx-large;
-            color: nth($colores, 4);
-        }
+    .precio{
+        font-weight: 500;
+        font-size: xx-large;
+        color: nth($colores, 4);
     }
 }
+
+
+.padd-cafes{
+    padding-top: 6%;
+    padding-bottom: 6%
+}
+
+
+
+
+.img-cafe{
+    @include cambio(350px);
+}
+
+.img-capsula{
+    @include cambio(385px);
+
+}
+.img-cafetera{
+    @include cambio(350px);
+}
+
+
+
+
 
 @media only screen and (min-width:481px) and (max-width:960px){
     .img-cafe{
@@ -31,12 +53,12 @@ div{
     }
     
     .img-capsula{
-        @include cambio (285px);
+        @include cambio (275px);
     }
     
     
     .img-cafetera{
-        @include cambio (229px);
+        @include cambio (250px);
     }
 }
 
@@ -56,12 +78,12 @@ div{
         font-weight: 900;
     }
     .img-capsula{
-        @include cambio (170px);
+        @include cambio (165px);
     }
     
     
     .img-cafetera{
-        @include cambio (133px);
+        @include cambio (150px);
     }
     
 }
