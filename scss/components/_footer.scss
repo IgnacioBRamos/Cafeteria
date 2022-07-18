@@ -8,6 +8,9 @@
 }
 
 
+
+
+
 .padd-insta{
     padding-left: map-get($medidas, pl);
     padding-right: map-get($medidas, pr);
@@ -18,10 +21,24 @@
     }
 }
 
+
+
+
+
+@media only screen and (max-width:767px){  
+    .redes{
+        font-size: 10px;
+        font-weight: 800;
+    }
+}
+
+
+
+
 @media only screen and (max-width:480px){
     
-    .infocontactanos{
-        font-size: 9px;
+    .mapa{
+        height: 200px;
     }
     
     
@@ -30,23 +47,16 @@
         width: 60px;
     }
     
-    .infocontactanos__h6{
-        font-size: 13px;
+    
+    
+    .logo__redes{
+        width: 35px;
     }
-    
-    
     
     .logos__redes{
         display: map-get($medidas, flex-standard);
         flex-direction: map-get($medidas, dflex);
     }
-    
-    
-    
-    .logo__redes{
-        width: 25px;
-    }
-    
     
     .padd-insta{
         padding-left: 10px;
@@ -55,23 +65,20 @@
     
     
     
-    .mapa{
-        height: 200px;
-    }
-    
-    
-    
-    
-    
-}
-
-
-@media only screen and (max-width:767px){
-    
-    .redes{
+    .infocontactanos{
         font-size: 10px;
-        font-weight: 800;
+        
+        .infocontactanos__h6{
+            font-size: 12px;    
+        }
     }
+
+    .redes{
+        font-size: 0px;
+    }
+
 }
+
+
 
 /* Fin Footer*/

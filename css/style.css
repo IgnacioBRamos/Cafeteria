@@ -170,7 +170,7 @@ body {
 /* Fin shop-index.html*/
 /* Pagina shop.html */
 .nombres {
-  font-size: 35px;
+  font-size: 25px;
   font-weight: 900;
 }
 
@@ -268,35 +268,38 @@ div .precio {
     font-size: 12px;
   }
 }
+@media only screen and (max-width: 767px) {
+  .redes {
+    font-size: 10px;
+    font-weight: 800;
+  }
+}
 @media only screen and (max-width: 480px) {
-  .infocontactanos {
-    font-size: 9px;
+  .mapa {
+    height: 200px;
   }
   .logo {
     width: 60px;
   }
-  .infocontactanos__h6 {
-    font-size: 13px;
+  .logo__redes {
+    width: 35px;
   }
   .logos__redes {
     display: flex;
     flex-direction: row;
   }
-  .logo__redes {
-    width: 25px;
-  }
   .padd-insta {
     padding-left: 10px;
     padding-right: 10px;
   }
-  .mapa {
-    height: 200px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .redes {
+  .infocontactanos {
     font-size: 10px;
-    font-weight: 800;
+  }
+  .infocontactanos .infocontactanos__h6 {
+    font-size: 12px;
+  }
+  .redes {
+    font-size: 0px;
   }
 }
 /* Fin Footer*/
