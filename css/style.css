@@ -185,6 +185,31 @@ div .precio {
   padding-bottom: 6%;
 }
 
+.card-shop {
+  border: 1px solid #aa9d8c;
+}
+
+.card-shop:hover {
+  transition: all 400ms ease;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card-shop a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 25px;
+  margin-top: 10px;
+  background: gray;
+  border-radius: 4px;
+  transition: all 400ms ease;
+  color: white;
+}
+
+.card-shop a:hover {
+  background: rgba(128, 128, 128, 0.765);
+  color: white;
+}
+
 .img-cafe {
   height: 350px;
 }
