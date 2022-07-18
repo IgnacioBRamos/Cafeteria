@@ -1,30 +1,52 @@
 /* Shop-index.html*/
 
 
-.descripciones{
-    font-family: nth($fuentes, 2);
-}
-
-.links-2{
-    text-decoration: none;
-    color: nth($colores, 7);
-}
-
-@media only screen and (max-width:480px){
+.bg__img-shop{
+    background-image: url(../../multimedia/background-var.jpg);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: gray;
+    color: white;
+    background-blend-mode: multiply;
     
     .descripciones{
-        font-size: 10px;
+        font-family: nth($fuentes, 2);
+        text-align: start;
+        padding-right: 5%;
+    }
+    @media only screen and (max-width:480px){
+        
+        .descripciones{
+            font-size: 10px;
+            text-align: center;
+            padding-right: 25%;
+            padding-left: 25%;
+        }
+        
+        .icono-shop{
+            height: 40px;
+        }
+        
+        .flex-shop{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .conjunto_shop{
+            text-align: center;
+            padding-top: 5%;
+        }
+        
     }
     
-    .icono-shop{
-        height: 40px;
-    }
+    @media only screen and (min-width: 481px) and (max-width: 990px){
+        .descripciones{
+            padding-right: 45%;
+        }
     
-    .flex-shop{
-        display: flex;
-        flex-direction: column;
     }
-    
 }
 
 

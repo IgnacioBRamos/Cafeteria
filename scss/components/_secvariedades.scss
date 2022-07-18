@@ -1,17 +1,24 @@
 /* Variedades */
 
-.cartas-carrusel{
-    display: flex;
-    justify-content: center;
-    .cartas{
-        width: 300px;
-        
+
+.bg__variedades-img{
+    background-color: nth($colores, 5);
+    border-radius: 2%;
+    margin: 20px;
+    border: 1px solid black;
+    .img-variedades{
+        border-radius: 2%;
     }
     @media only screen and (max-width:480px){
-        .cartas{
-            width: 100%;
-        }        
+        .img-variedades{
+            height: 300px;
+        }    
     }
+
+}
+.links-2{
+    text-decoration: none;
+    color: nth($colores, 7); 
 }
 
 
