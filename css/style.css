@@ -169,24 +169,55 @@ body {
 
 /* Fin shop-index.html*/
 /* Pagina shop.html */
-.nombres {
+.card-shop {
+  border: 1px solid #aa9d8c;
+}
+.card-shop .img-cafe {
+  height: 350px;
+}
+.card-shop .img-capsula {
+  height: 385px;
+}
+.card-shop .img-cafetera {
+  height: 350px;
+}
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+  .card-shop .img-cafe {
+    height: 250px;
+  }
+  .card-shop .img-capsula {
+    height: 275px;
+  }
+  .card-shop .img-cafetera {
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .card-shop .img-cafe {
+    height: 150px;
+  }
+  .card-shop .des-cafe {
+    font-size: 10px;
+  }
+  .card-shop .nombres {
+    font-size: 20px;
+    font-weight: 900;
+  }
+  .card-shop .img-capsula {
+    height: 165px;
+  }
+  .card-shop .img-cafetera {
+    height: 150px;
+  }
+}
+.card-shop .nombres {
   font-size: 25px;
   font-weight: 900;
 }
-
-div .precio {
+.card-shop .precio {
   font-weight: 500;
   font-size: xx-large;
   color: #aa9d8c;
-}
-
-.padd-cafes {
-  padding-top: 6%;
-  padding-bottom: 6%;
-}
-
-.card-shop {
-  border: 1px solid #aa9d8c;
 }
 
 .card-shop:hover {
@@ -210,47 +241,6 @@ div .precio {
   color: white;
 }
 
-.img-cafe {
-  height: 350px;
-}
-
-.img-capsula {
-  height: 385px;
-}
-
-.img-cafetera {
-  height: 350px;
-}
-
-@media only screen and (min-width: 481px) and (max-width: 960px) {
-  .img-cafe {
-    height: 250px;
-  }
-  .img-capsula {
-    height: 275px;
-  }
-  .img-cafetera {
-    height: 250px;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .img-cafe {
-    height: 150px;
-  }
-  .des-cafe {
-    font-size: 10px;
-  }
-  .nombres {
-    font-size: 20px;
-    font-weight: 900;
-  }
-  .img-capsula {
-    height: 165px;
-  }
-  .img-cafetera {
-    height: 150px;
-  }
-}
 /* Fin shop.html */
 /* Footer */
 .mapa {
@@ -314,6 +304,11 @@ div .precio {
 .descripciones-menu {
   font-family: "Dancing Script";
   font-size: 16px;
+}
+
+.padd-cafes {
+  padding-top: 6%;
+  padding-bottom: 6%;
 }
 
 @media only screen and (max-width: 767px) {

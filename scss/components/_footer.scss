@@ -8,9 +8,6 @@
 }
 
 
-
-
-
 .padd-insta{
     padding-left: map-get($medidas, pl);
     padding-right: map-get($medidas, pr);
@@ -21,19 +18,12 @@
     }
 }
 
-
-
-
-
 @media only screen and (max-width:767px){  
     .redes{
         font-size: 10px;
         font-weight: 800;
     }
 }
-
-
-
 
 @media only screen and (max-width:480px){
     

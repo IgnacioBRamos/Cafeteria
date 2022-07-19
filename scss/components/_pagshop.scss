@@ -4,27 +4,74 @@
 
 
 
-.nombres{
-    font-size: 25px;
-    font-weight: 900;     
-}
+.card-shop{
+    border: 1px solid nth($colores, 4);
+
+    .img-cafe{
+        @include cambio(350px);
+    }
     
-div{
+    .img-capsula{
+        @include cambio(385px);
+        
+    }
+    .img-cafetera{
+        @include cambio(350px);
+    }
+    
+    @media only screen and (min-width:481px) and (max-width:960px){
+        .img-cafe{
+            @include cambio(250px);
+        }
+        
+        .img-capsula{
+            @include cambio (275px);
+        }
+        
+        
+        .img-cafetera{
+            @include cambio (250px);
+        }
+    }
+    
+    @media only screen and (max-width:480px){
+        .img-cafe{
+            @include cambio (150px);
+            
+        }
+        
+        .des-cafe{
+            font-size: 10px;
+        }
+        
+        
+        .nombres{
+            font-size: 20px;
+            font-weight: 900;
+        }
+        .img-capsula{
+            @include cambio (165px);
+        }
+        
+        
+        .img-cafetera{
+            @include cambio (150px);
+        }
+        
+    }
+    
+    .nombres{
+        font-size: 25px;
+        font-weight: 900;     
+    }
+    
     .precio{
         font-weight: 500;
         font-size: xx-large;
         color: nth($colores, 4);
     }
-}
-
-
-.padd-cafes{
-    padding-top: 6%;
-    padding-bottom: 6%
-}
-
-.card-shop{
-    border: 1px solid nth($colores, 4);
+    
+    
 }
 
 .card-shop:hover{
@@ -42,72 +89,10 @@ div{
     transition: all 400ms ease;
     color: white;
 }
-
-
 .card-shop a:hover{
     background: rgba(128, 128, 128, 0.765);
     color: white
 }
-
-
-
-.img-cafe{
-    @include cambio(350px);
-}
-
-.img-capsula{
-    @include cambio(385px);
-
-}
-.img-cafetera{
-    @include cambio(350px);
-}
-
-
-
-
-
-@media only screen and (min-width:481px) and (max-width:960px){
-    .img-cafe{
-        @include cambio(250px);
-    }
-    
-    .img-capsula{
-        @include cambio (275px);
-    }
-    
-    
-    .img-cafetera{
-        @include cambio (250px);
-    }
-}
-
-@media only screen and (max-width:480px){
-    .img-cafe{
-        @include cambio (150px);
-        
-    }
-    
-    .des-cafe{
-        font-size: 10px;
-    }
-    
-    
-    .nombres{
-        font-size: 20px;
-        font-weight: 900;
-    }
-    .img-capsula{
-        @include cambio (165px);
-    }
-    
-    
-    .img-cafetera{
-        @include cambio (150px);
-    }
-    
-}
-
 
 
 
