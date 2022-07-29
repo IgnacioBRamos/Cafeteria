@@ -20,6 +20,7 @@ body {
 .bg-nacho div .tx-align .links {
   font-family: "Courgette";
   color: white !important;
+  z-index: 1;
 }
 
 /* fin Navbar*/
@@ -37,6 +38,10 @@ body {
 /* banner */
 .img-1, .img-2, .img-3 {
   width: 100%;
+}
+
+.prioridad-banner {
+  z-index: 0 !important;
 }
 
 /* Fin banner */
@@ -64,9 +69,11 @@ body {
 .flex__nosotros .bg__nosotros-img .deco-titulo {
   padding-top: 5%;
   font-size: 20px;
+  font-family: "Courgette";
 }
 .flex__nosotros .bg__nosotros-img .txt__nosotros {
   color: white;
+  font-family: "Edu VIC WA NT Beginner";
   padding-left: 10%;
   padding-right: 10%;
   font-size: 15px;
@@ -138,7 +145,7 @@ body {
   background-blend-mode: multiply;
 }
 .bg__img-shop .descripciones {
-  font-family: "Dancing Script";
+  font-family: "Edu VIC WA NT Beginner";
   text-align: start;
   padding-right: 5%;
 }
@@ -170,45 +177,16 @@ body {
 /* Fin shop-index.html*/
 /* Pagina shop.html */
 .card-shop {
+  width: 400px;
   border: 1px solid #aa9d8c;
+  padding: 2%;
 }
-.card-shop .img-cafe {
-  height: 350px;
+.card-shop .img-cafe, .card-shop .img-capsula, .card-shop .img-cafetera {
+  width: 100%;
 }
-.card-shop .img-capsula {
-  height: 385px;
-}
-.card-shop .img-cafetera {
-  height: 350px;
-}
-@media only screen and (min-width: 481px) and (max-width: 960px) {
-  .card-shop .img-cafe {
-    height: 250px;
-  }
-  .card-shop .img-capsula {
-    height: 275px;
-  }
-  .card-shop .img-cafetera {
-    height: 250px;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .card-shop .img-cafe {
-    height: 150px;
-  }
-  .card-shop .des-cafe {
-    font-size: 10px;
-  }
-  .card-shop .nombres {
-    font-size: 20px;
-    font-weight: 900;
-  }
-  .card-shop .img-capsula {
-    height: 165px;
-  }
-  .card-shop .img-cafetera {
-    height: 150px;
-  }
+.card-shop .des-cafe {
+  font-family: "Edu VIC WA NT Beginner";
+  padding: 5% 10px;
 }
 .card-shop .nombres {
   font-size: 25px;
@@ -218,6 +196,19 @@ body {
   font-weight: 500;
   font-size: xx-large;
   color: #aa9d8c;
+}
+@media only screen and (max-width: 480px) {
+  .card-shop .des-cafe {
+    font-size: 7px;
+    padding-top: 1px;
+  }
+  .card-shop .nombres {
+    font-size: 15px;
+    font-weight: 900;
+  }
+  .card-shop .precio {
+    font-size: smaller;
+  }
 }
 
 .card-shop:hover {
@@ -241,6 +232,17 @@ body {
   color: white;
 }
 
+@media only screen and (max-width: 480px) {
+  .card-shop {
+    width: 150px;
+  }
+  .card-shop a {
+    padding: 6px 15px;
+    margin-top: 5px;
+    border-radius: 4px;
+    font-size: 10px;
+  }
+}
 /* Fin shop.html */
 /* Footer */
 .mapa {
@@ -302,7 +304,7 @@ body {
 }
 
 .descripciones-menu {
-  font-family: "Dancing Script";
+  font-family: "Edu VIC WA NT Beginner";
   font-size: 16px;
 }
 

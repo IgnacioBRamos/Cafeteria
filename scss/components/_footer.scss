@@ -1,5 +1,3 @@
-@import "../base/mapa";
-
 /* Footer */
 
 .mapa{
@@ -9,8 +7,8 @@
 
 
 .padd-insta{
-    padding-left: map-get($medidas, pl);
-    padding-right: map-get($medidas, pr);
+    padding-left: 20px;
+    padding-right: 20px;
 }
 @media only screen and (min-width:481px) and (max-width:960px){      
     .infocontactanos{
@@ -44,8 +42,8 @@
     }
     
     .logos__redes{
-        display: map-get($medidas, flex-standard);
-        flex-direction: map-get($medidas, dflex);
+        display: flex;
+        flex-direction: row;
     }
     
     .padd-insta{

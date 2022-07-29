@@ -12,6 +12,7 @@
             .links{
                 font-family: nth($fuentes, 1);
                 color: nth($colores, 5) !important;
+                z-index: 1;
             }    
             
         }

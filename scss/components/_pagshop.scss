@@ -1,78 +1,50 @@
 /* Pagina shop.html */
-@import "../base/mixin";
+
 
 
 
 
 .card-shop{
+    width: 400px;
     border: 1px solid nth($colores, 4);
+    padding: 2%;
 
-    .img-cafe{
-        @include cambio(350px);
+    .img-cafe,.img-capsula ,.img-cafetera{
+        width: 100%;
     }
-    
-    .img-capsula{
-        @include cambio(385px);
-        
+    .des-cafe{
+        font-family: nth($fuentes, 2);
+        padding: 5% 10px;
     }
-    .img-cafetera{
-        @include cambio(350px);
-    }
-    
-    @media only screen and (min-width:481px) and (max-width:960px){
-        .img-cafe{
-            @include cambio(250px);
-        }
-        
-        .img-capsula{
-            @include cambio (275px);
-        }
-        
-        
-        .img-cafetera{
-            @include cambio (250px);
-        }
-    }
-    
-    @media only screen and (max-width:480px){
-        .img-cafe{
-            @include cambio (150px);
-            
-        }
-        
-        .des-cafe{
-            font-size: 10px;
-        }
-        
-        
-        .nombres{
-            font-size: 20px;
-            font-weight: 900;
-        }
-        .img-capsula{
-            @include cambio (165px);
-        }
-        
-        
-        .img-cafetera{
-            @include cambio (150px);
-        }
-        
-    }
-    
     .nombres{
         font-size: 25px;
         font-weight: 900;     
     }
-    
     .precio{
         font-weight: 500;
         font-size: xx-large;
         color: nth($colores, 4);
     }
-    
+    @media only screen and (max-width:480px){
+        
+        .des-cafe{
+            font-size: 7px;
+            padding-top: 1px;
+        }  
+        .nombres{
+            font-size: 15px;
+            font-weight: 900;
+        }
+        .precio{
+            font-size: smaller;
+        }
+    }
     
 }
+
+
+
+
 
 .card-shop:hover{
     transition: all 400ms ease;
@@ -94,6 +66,17 @@
     color: white
 }
 
+@media only screen and (max-width:480px){
+    .card-shop{
+        width: 150px;
+    }
+    .card-shop a{
+        padding: 6px 15px;
+        margin-top: 5px;
+        border-radius: 4px;
+        font-size: 10px;
+    }
+}
 
 
 
