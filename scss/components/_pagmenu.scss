@@ -13,13 +13,15 @@
     
     
     
-.descripciones-menu{
-        
+.descripciones-menu{  
         font-family: nth($fuentes, 2);
         font-size: 16px;
 }
     
-    
+.padd-cafes{
+    padding-top: 6%;
+    padding-bottom: 6%
+}   
   
 @media only screen and (max-width:767px){
         
