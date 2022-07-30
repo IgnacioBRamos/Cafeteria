@@ -2,8 +2,6 @@
 
 
 
-
-
 .card-shop{
     width: 400px;
     border: 1px solid nth($colores, 4);
@@ -12,31 +10,48 @@
     .img-cafe,.img-capsula ,.img-cafetera{
         width: 100%;
     }
-    .des-cafe{
-        font-family: nth($fuentes, 2);
-        padding: 5% 10px;
-    }
     .nombres{
         font-size: 25px;
-        font-weight: 900;     
+        font-weight: 900;
+        margin-top: 5%;     
+    }
+    .des-cafe{
+        font-family: nth($fuentes, 2);
+        margin: 10%;
     }
     .precio{
         font-weight: 500;
         font-size: xx-large;
         color: nth($colores, 4);
+        margin-bottom: 5%;
     }
     @media only screen and (max-width:480px){
         
-        .des-cafe{
-            font-size: 7px;
-            padding-top: 1px;
-        }  
         .nombres{
-            font-size: 15px;
+            font-size: 10px;
+            font-weight: 900;
+            margin: 0px;
+            margin-top: 5%;
+        }
+        .des-cafe{
+            font-size: 5px;
+            margin: 5%;
+        }  
+        .precio{
+            font-size: 10px;
+        }
+    }
+    @media only screen and (min-width: 481px) and (max-width: 1440px){
+        .nombres{
+            font-size: 13px;
             font-weight: 900;
         }
+        .des-cafe{
+            font-size: 15px;
+            padding-top: 1px;
+        }  
         .precio{
-            font-size: smaller;
+            font-size: 25px;
         }
     }
     
@@ -55,7 +70,7 @@
     text-decoration: none;
     display: inline-block;
     padding: 12px 25px;
-    margin-top: 10px;
+    margin-top: 20px;
     background: gray;
     border-radius: 4px;
     transition: all 400ms ease;
@@ -68,13 +83,25 @@
 
 @media only screen and (max-width:480px){
     .card-shop{
-        width: 150px;
+        width: 100px;
     }
     .card-shop a{
-        padding: 6px 15px;
+        padding: 2px 10px;
         margin-top: 5px;
         border-radius: 4px;
-        font-size: 10px;
+        font-size: 5px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1440px){
+    .card-shop{
+        width: 300px;
+    }
+    .card-shop a{
+        padding: 10px 40px;
+        margin-top: 5px;
+        border-radius: 4px;
+        font-size: 15px;
     }
 }
 
