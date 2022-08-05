@@ -43,7 +43,7 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#Inicio">
-          <img src="multimedia/logocafeteria.jpg" alt="Logo de la Cafeteria" class="logo img-fluid" width="60px"
+          <img src="multimedia/logocafeteria.jpg" alt="Logo de la Cafeteria" class="logo img-fluid rounded" width="60px"
             height="75px">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -350,113 +350,81 @@
 
 
   <!-- Section contacto -->
-  <section class="container-fluid sect-contacto">
-    <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13137.707806489158!2d-58.43208323053615!3d-34.5933637674378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb568b018e969%3A0x92c141d8fb0735c7!2zT2xpIGNhZsOp!5e0!3m2!1ses-419!2sar!4v1653858053246!5m2!1ses-419!2sar"
-    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-    class="mapa"></iframe>
-    <div class="grid-form">
-      <div>
-        <h2>Reservas</h2>
-      </div>
-      <div class="row g-3">
-        <div class="col-5 offset-1">
-          <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
-        </div>
-        <div class="col-5">
-          <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
-        </div>
-      </div>
+  <section class="container-fluid  py-5">
 
-      <div class="mb-3 col-10 offset-1">
-        <label for="exampleFormControlInput1" class="form-label">Email</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-      <div class="mb-3 col-10 offset-1">
-        <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-      <div class="col-auto text-center">
-        <button type="submit" class="btn btn-primary">Submit</button>
+    <div class="row">
+      
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13137.707806489158!2d-58.43208323053615!3d-34.5933637674378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb568b018e969%3A0x92c141d8fb0735c7!2zT2xpIGNhZsOp!5e0!3m2!1ses-419!2sar!4v1653858053246!5m2!1ses-419!2sar"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        class="mapa"></iframe>
+        
+    </div>
+
+    <div class="row py-2">
+      <div >
+        <div class="contact-form-container">
+          <h2 class="h2-formulario">Reserva</h2>
+          <form action="">
+            <input type="text" class="form-input" name="Nombre" placeholder="Nombre">
+            <input type="text" class="form-input" name="Email"  placeholder="Email">
+            <input type="text" class="form-input" name="Telefono" placeholder="Telefono">
+            <textarea name="mensaje" id="" cols="30" rows="10" class="form-input textarea" placeholder="Escriba horario de su reserva"></textarea>
+            <input type="button" value="Enviar" class="form-input">
+          </form>
+        </div>
       </div>
 
     </div>
   </section>
 
   <!-- Section footer -->
-  <footer class="container-fluid sect-footer">
-    <div class="row py-5">
-
-        <div class="contenido_footer">
-            <div>
-              <a href="Index.html">
-                <img src="multimedia/logocafeteria.jpg" alt="Logo de la cafeteria" class="logo img-fluid rounded" width="100px">
-              </a>
-
-
-
-              <div class="logos__redes">
+  
+  
+  <footer>
+    <div class="flex-contenido-footer py-2 container-fluid">
+        <div>
+            <div class="contenido-logos">
                 <div>
-                  <a href="https://www.facebook.com" target="_blank" >
-                  <img src="multimedia/logofacebook.png" alt="logo facebook" class="logo__redes facebook " >
+                    <a href="#"><img src="multimedia/logocafeteria.jpg" alt="" class="logo-cafeteria"></a>
                 </div>
-                <div class="">
-                    <a href="https://www.instagram.com" target="_blank" >
-                      <img src="multimedia/logoinstagram.png" alt="logo Instagram" class="logo__redes instagram " >
-                </div>        
-                        
-                    
                 <div>
-                  <a href="https://www.twitter.com" target="_blank" >
-                    <img src="multimedia/logotwitter.png" alt="logo twitter" class="logo__redes twitter ">
-                </div>        
-              </div>        
+                    <a href=""><img src="multimedia/logotwitter.png" alt="" class="logos-redes"></a>
+                    <a href=""><img src="multimedia/logoinstagram.png" alt="" class="logos-redes"></a>
+                    <a href=""><img src="multimedia/logofacebook.png" alt="" class="logos-redes"></a>
+                </div>
             </div>
-
-                
+        </div>
+        <div class="div__links">
+            <a href="#Inicio" class="links_a">Home</a>
+          
+            <a  href="#Nosotros" class="links_a">Nosotros</a>
+          
+            <a href="#Variedades" class="links_a">Variedades</a>
+          
+            <a href="menu.html" target="_blank" class="links_a">Menu</a>
+          
+            <a href="shop.html" target="_blank" class="links_a">Shop</a>
+          
+            <a href="#Contacto" class="links_a">Contacto</a>
+        </div>
+          
+        <div>
             
-            <div>
-                  <a href="#Inicio">Home</a>
-                
-                  <a  href="#Nosotros">Nosotros</a>
-                
-                  <a href="#Variedades">Variedades</a>
-                
-                  <a href="menu.html" target="_blank">Menu</a>
-                
-                  <a href="shop.html" target="_blank">Shop</a>
-                
-                  <a href="#Contacto">Contacto</a>
-                
-            </div>
-
-
-
+                <h6 class="footer_h6">Direccion:</h6>
+                <p class="contacto">Costa Rica 6020,CABA</p>
             
-
-
-
-            <div class="infocontactanos d-flex flex-column ">
-                <div >
-                    <h6 class="infocontactanos__h6">Direccion:</h6>
-                    <p>Costa Rica 6020,CABA</p>
-                </div>
-                <div>
-                    <h6 class="infocontactanos__h6">Email:</h6>
-                    <p>email@gmail.com</p>
-                </div>
-                <div>
-                    <h6 class="infocontactanos__h6">Telefono:</h6>
-                    <p>4444-4444</p>
-                </div>
-            </div>
-          </div>
-
-        
-
-    </div>
-
-</footer>
+            
+                <h6 class="footer_h6">Email:</h6>
+                <p class="contacto">email@gmail.com</p>
+            
+            
+                <h6 class="footer_h6">Telefono:</h6>
+                <p class="contacto">4444-4444</p>
+            
+        </div>
+    </div>    
+  </footer>
 
 
 
