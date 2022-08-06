@@ -123,7 +123,7 @@ body {
 }
 @media only screen and (max-width: 480px) {
   .bg__variedades-img .img-variedades {
-    height: 300px;
+    height: 200px;
   }
 }
 
@@ -404,7 +404,7 @@ body {
     align-items: center;
   }
   .descripciones-menu {
-    font-family: "Dancing Script", cursive;
+    font-family: "Edu VIC WA NT Beginner";
   }
 }
 /* fin menu html*/
