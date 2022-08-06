@@ -15,6 +15,11 @@
             height: 200px;
         }    
     }
+    @media only screen and (min-width:481px) and (max-width: 1440px){
+        .img-variedades{
+            height: 350px;
+        }
+    }
 }
 .links-2{
     text-decoration: none;
