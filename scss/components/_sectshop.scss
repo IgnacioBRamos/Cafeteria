@@ -7,8 +7,8 @@
     padding-bottom: 100px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-color: gray;
-    color: white;
+    background-color: nth($colores, 8);
+    color: nth($colores, 5);
     background-blend-mode: multiply;
 
     
